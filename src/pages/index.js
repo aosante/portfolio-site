@@ -7,10 +7,12 @@ const pageStyles = {
   fontFamily: "-apple-system, Roboto, sans-serif, serif",
 }
 
-export default () => {
+const IndexPage = () => {
   return (
     <main style={pageStyles}>
      INDEX PAGE
     </main>
   )
 }
+
+export default IndexPage
