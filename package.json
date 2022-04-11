@@ -3,22 +3,30 @@
   "version": "1.0.0",
   "private": true,
   "description": "portfolio-site",
-  "author": "aosante",
+  "author": "aosante <andres.osante@gmail.com>",
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "portfolio",
+    "developer"
   ],
   "scripts": {
     "develop": "gatsby develop",
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "reset": "rm -rf .cache/ public/"
   },
   "dependencies": {
-    "babel-plugin-styled-components": "^2.0.7",
+    "@juggle/resize-observer": "^3.3.1",
+    "dotenv": "^16.0.0",
     "gatsby": "^4.11.2",
     "gatsby-plugin-image": "^2.11.1",
     "gatsby-plugin-manifest": "^4.11.1",
+    "gatsby-plugin-nprogress": "^4.11.0",
+    "gatsby-plugin-offline": "^5.11.1",
     "gatsby-plugin-react-helmet": "^5.11.0",
     "gatsby-plugin-sharp": "^4.11.1",
     "gatsby-plugin-sitemap": "^5.11.1",
@@ -26,9 +34,34 @@
     "gatsby-source-filesystem": "^4.11.1",
     "gatsby-transformer-remark": "^5.11.1",
     "gatsby-transformer-sharp": "^4.11.0",
+    "lodash.shuffle": "^4.2.0",
     "react": "^17.0.1",
+    "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
-    "styled-components": "^5.3.5"
+    "react-hook-form": "^7.29.0",
+    "react-intersection-observer": "^8.33.1",
+    "react-spring": "^9.4.4",
+    "react-use-measure": "^2.1.1",
+    "styled-components": "^5.3.5",
+    "sweetalert2": "^11.4.8"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-styled-components": "^2.0.7",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-html": "^6.2.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-react-hooks": "^4.4.0",
+    "prettier": "^2.6.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:aosante/portfolio-site.git"
   }
 }
