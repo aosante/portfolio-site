@@ -1,0 +1,19 @@
+{
+  "extends": ["wesbos"],
+  "rules": {
+    "no-console": 2,
+    "import/no-unresolved": 0,
+    "react/display-name": 0,
+    "react/prop-types": false,
+    "prettier/prettier": [
+      "error",
+      {
+        "trailingComma": "es6",
+        "semi": false,
+        "singleQuote": true,
+        "printWidth": 120,
+        "tabWidth": 2
+      }
+    ]
+  }
+}
