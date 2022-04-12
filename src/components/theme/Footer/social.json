@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "name": "Github",
+    "link": "https://github.com/aosante",
+    "icon": "/icons/githubfooter.svg"
+  },
+  {
+    "id": 0,
+    "name": "LinkedIn",
+    "link": "https://www.linkedin.com/in/andr%C3%A9s-osante-alfaro-845701ba/",
+    "icon": "/icons/linkedin.svg"
+  }
+]
