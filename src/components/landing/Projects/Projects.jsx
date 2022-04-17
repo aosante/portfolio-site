@@ -46,6 +46,7 @@ export const Projects = () => {
       <Wrapper as={Container} id="projects">
         <Title>Projects</Title>
         <Grid>
+          {/* @todo: stop using index as key prop */}
           {edges.map(({ node: { frontmatter } }, i) => (
             <Item key={i} className="item">
               <Card>
@@ -81,8 +82,8 @@ export const Projects = () => {
                   <p>{frontmatter.description}</p>
                 </Content>
                 <Stack>
-                  {frontmatter.technologies.split(',').map((item, index) => (
-                    <li key={index}>{item}</li>
+                  {frontmatter.technologies.split(',').map((item) => (
+                    <li key={item}>{item}</li>
                   ))}
                 </Stack>
               </Card>
