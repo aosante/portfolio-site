@@ -1,15 +1,13 @@
 import React from 'react'
-import Footer from '../../theme/Footer'
+import { Footer } from 'components/theme'
 import { Global } from './styles'
 import './fonts.css'
 import './variables.css'
 
-const Layout = ({ children }) => (
+export const Layout = ({ children }) => (
   <>
     <Global />
     {children}
     <Footer />
   </>
 )
-
-export default Layout
