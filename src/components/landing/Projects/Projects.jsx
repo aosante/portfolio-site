@@ -26,6 +26,7 @@ export const Projects = () => {
         allMarkdownRemark {
           edges {
             node {
+              id
               frontmatter {
                 technologies
                 sourcelink
@@ -46,9 +47,8 @@ export const Projects = () => {
       <Wrapper as={Container} id="projects">
         <Title>Projects</Title>
         <Grid>
-          {/* @todo: stop using index as key prop */}
-          {edges.map(({ node: { frontmatter } }, i) => (
-            <Item key={i} className="item">
+          {edges.map(({ node: { frontmatter, id } }) => (
+            <Item key={id} className="item">
               <Card>
                 <Header>
                   <div className="icon">
