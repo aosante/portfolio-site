@@ -2,7 +2,7 @@ import React from 'react'
 import { Wrapper, Links, Info } from './styles'
 import social from './social.json'
 
-export const Footer = () => (
+const Footer = () => (
 	<Wrapper>
 		 <svg viewBox="0 0 120 28">
         <defs>
@@ -49,3 +49,5 @@ export const Footer = () => (
 	  </div>
 	</Wrapper>
 )
+
+export default Footer
