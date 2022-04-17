@@ -1,5 +1,5 @@
 export * from './About/About'
 export * from './Contact/Contact'
-// export * from './Intro/Intro'
-// export * from './Projecs/Projecs'
+export * from './Intro/Intro'
+export * from './Projecs/Projecs'
 // export * from './Skills/Skills'
