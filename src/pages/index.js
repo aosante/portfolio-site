@@ -9,7 +9,7 @@ const Index = () => (
     <Intro />
     <About />
     <Projects />
-    {/* <Skills /> */}
+    <Skills />
     {/* <Contact /> */}
   </Layout>
 )

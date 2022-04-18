@@ -20,7 +20,6 @@
     "reset": "rm -rf .cache/ public/"
   },
   "dependencies": {
-    "@juggle/resize-observer": "^3.3.1",
     "dotenv": "^16.0.0",
     "gatsby": "^4.11.2",
     "gatsby-plugin-image": "^2.11.1",

@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from 'react'
+import React, { useEffect, useMemo, useState } from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import { useTransition, a } from 'react-spring'
 import shuffle from 'lodash.shuffle'
 import useMeasure from 'react-use-measure'
-import { ResizeObserver } from '@juggle/resize-observer'
 import { InView } from 'react-intersection-observer'
 import { useSpring, animated } from 'react-spring'
 
@@ -57,30 +56,52 @@ export const Skills = () => {
     2
   )
   // Hook2: Measure the width of the container element
-  const [ref, { width }] = useMeasure({ polyfill: ResizeObserver })
+  const [ref, { width }] = useMeasure()
   // Hook3: Hold items
   const [items, set] = useState(skillData)
   // Hook4: shuffle data every 2 seconds
-  useEffect(() => void setInterval(() => set(shuffle), 2000), [])
+  useEffect(() => {
+    const t = setInterval(() => set(shuffle), 2000)
+    return () => clearInterval(t)
+  }, [])
   // Form a grid of stacked items using width & columns we got from hooks 1 & 2
-  let heights = new Array(columns).fill(0) // Each column gets a height starting with zero
-  let gridItems = items.map((child, i) => {
-    const column = heights.indexOf(Math.min(...heights)) // Basic masonry-grid placing, puts tile into the smallest column using Math.min
-    const xy = [
-      (width / columns) * column,
-      (heights[column] += child.height / 2) - child.height / 2,
-    ] // X = container width / number of columns * column index, Y = it's just the height of the current column
-    return { ...child, xy, width: width / columns, height: child.height / 2 }
-  })
-  // Hook5: Turn the static grid values into animated transitions, any addition, removal or change will be animated
-  const transitions = useTransition(gridItems, (item) => item.css, {
-    from: ({ xy, width, height }) => ({ xy, width, height, opacity: 0 }),
-    enter: ({ xy, width, height }) => ({ xy, width, height, opacity: 1 }),
-    update: ({ xy, width, height }) => ({ xy, width, height }),
+  const [gridHeights, gridItems] = useMemo(() => {
+    let heights = new Array(columns).fill(0) // Each column gets a height starting with zero
+    let gridItems = items.map((child, i) => {
+      const column = heights.indexOf(Math.min(...heights)) // Basic masonry-grid placing, puts tile into the smallest column using Math.min
+      const x = (width / columns) * column // x = container width / number of columns * column index,
+      const y = (heights[column] += child.height / 2) - child.height / 2 // y = it's just the height of the current column
+      return {
+        ...child,
+        x,
+        y,
+        width: width / columns,
+        height: child.height / 2,
+      }
+    })
+    return [heights, gridItems]
+  }, [columns, items, width])
+  // Hook5: Turn the static grid values into animated transitions, any addition, removal or change will be animated.
+  const transition = useTransition(gridItems, {
+    key: (item) => item.css,
+    from: ({ x, y, width, height }) => ({ x, y, width, height, opacity: 0 }),
+    enter: ({ x, y, width, height }) => ({ x, y, width, height, opacity: 1 }),
+    update: ({ x, y, width, height }) => ({ x, y, width, height }),
     leave: { height: 0, opacity: 0 },
     config: { mass: 5, tension: 500, friction: 100 },
     trail: 25,
   })
+
+  const fragment = transition((style, item) => (
+    <a.div style={style}>
+      <img
+        className={item.isDark && 'dark'}
+        style={{ maxWidth: 73 }}
+        src={skillImages[item.name]}
+        alt={item.name}
+      />
+    </a.div>
+  ))
 
   // Fades in skills description when in view
   const onViewChange = (inview) => {
@@ -115,26 +136,9 @@ export const Skills = () => {
       <SkillGrid
         ref={ref}
         className="list"
-        style={{ height: Math.max(...heights) }}
+        style={{ height: Math.max(...gridHeights) }}
       >
-        {transitions.map(({ item, props: { xy, ...rest }, key }) => (
-          <a.div
-            key={key}
-            style={{
-              transform: xy.interpolate(
-                (x, y) => `translate3d(${x}px,${y}px,0)`
-              ),
-              ...rest,
-            }}
-          >
-            <img
-              className={item.isDark && 'dark'}
-              style={{ maxWidth: 73 }}
-              src={skillImages[item.name]}
-              alt={item.name}
-            />
-          </a.div>
-        ))}
+        {fragment}
       </SkillGrid>
     </Wrapper>
   )
