@@ -6,7 +6,12 @@ import { Button, Input, TextArea } from 'components/common'
 import { Error, Center, InputField } from './styles'
 
 const ContactForm = () => {
-  const { handleSubmit, errors, register, reset } = useForm({
+  const {
+    handleSubmit,
+    formState: { errors },
+    register,
+    reset,
+  } = useForm({
     mode: 'onTouched',
   })
 
@@ -47,9 +52,9 @@ const ContactForm = () => {
           type="text"
           name="name"
           aria-label="name"
-          placeholder="Full name*"
-          ref={register({ required: true })}
-          error={errors.name ? true : false}
+          placeholder="Full name *"
+          {...register('name', { required: true })}
+          error={Boolean(errors.name)}
         />
         <Error>{errors.name && 'Your name is required'}</Error>
       </InputField>
@@ -59,9 +64,9 @@ const ContactForm = () => {
           aria-label="email"
           type="email"
           name="email"
-          placeholder="Email*"
-          ref={register({ required: true, pattern: /^\S+@\S+\.\S+$/ })}
-          error={errors.email ? true : false}
+          placeholder="Email *"
+          {...register('email', { required: true, pattern: /^\S+@\S+\.\S+$/ })}
+          error={Boolean(errors.email)}
         />
         <Error>
           {errors.email && 'You must provide a valid email address'}
@@ -74,9 +79,9 @@ const ContactForm = () => {
           rows="8"
           type="message"
           name="message"
-          placeholder="Message*"
-          ref={register({ required: true })}
-          error={errors.message ? true : false}
+          placeholder="Message *"
+          {...register('message', { required: true })}
+          error={Boolean(errors.message)}
         />
         <Error>{errors.message && 'This field is required'}</Error>
       </InputField>
