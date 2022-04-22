@@ -15,19 +15,17 @@ const ContactForm = () => {
     mode: 'onTouched',
   })
 
-  const encode = (data) => {
-    return Object.keys(data)
-      .map(
-        (key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key])
-      )
-      .join('&')
-  }
-
   const onSubmit = (data) => {
-    fetch('/', {
+    const formData = new FormData()
+
+    Object.keys(data).forEach((field) =>
+      formData.append(`${field}`, data[field])
+    )
+
+    // @todo: place endpoint in env variable
+    fetch(`https://getform.io/f/${process.env.GATSBY_GETFORM_KEY}`, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: encode({ 'form-name': 'contact', ...data }),
+      body: formData,
     })
       .then(() => {
         Swal.fire('Message sent!', "I'll get back to you ASAP", 'success')
@@ -35,17 +33,9 @@ const ContactForm = () => {
       })
       .catch((error) => alert(error))
   }
-  return (
-    <form
-      name="portfolio-dev"
-      method="post"
-      // will devploy on gatsby cloud, so this no longer works
 
-      // data-netlify="true"
-      // data-netlify-recaptcha="true"
-      // data-netlify-honeypot="bot-field"
-      onSubmit={handleSubmit(onSubmit)}
-    >
+  return (
+    <form name="portfolio-dev" method="POST" onSubmit={handleSubmit(onSubmit)}>
       <input type="hidden" name="form-name" value="contact" />
       <InputField>
         <Input
