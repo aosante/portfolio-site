@@ -71,22 +71,6 @@ export const Details = styled.div`
     }
   }
 
-  h4 {
-    margin-bottom: 2.5rem;
-    font-size: 1.125rem;
-    line-height: 1.5;
-    font-weight: normal;
-    color: var(--text-white-secondary);
-    letter-spacing: 1px;
-
-    @media (max-width: 680px) {
-      font-size: 1rem;
-      span.hide {
-        display: none;
-      }
-    }
-  }
-
   span {
     color: var(--text-white);
 

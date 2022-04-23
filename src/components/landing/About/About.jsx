@@ -36,13 +36,17 @@ export const About = () => {
             <animated.div style={aboutProps}>
               <p>
                 I'm a business graduate from{' '}
-                <a href="https://www.ucr.ac.cr/" target="_blank">
-                  Universidad de Costa Rica
-                </a>
+                <strong>
+                  <a href="https://www.ucr.ac.cr/" target="_blank">
+                    Universidad de Costa Rica
+                  </a>
+                </strong>
                 , with a technical degree in Software Engineering from{' '}
-                <a href="https://www.ucenfotec.ac.cr/" target="_blank">
-                  Universidad Cenfotec
-                </a>
+                <strong>
+                  <a href="https://www.ucenfotec.ac.cr/" target="_blank">
+                    Universidad Cenfotec
+                  </a>
+                </strong>
                 .
               </p>
               <p>

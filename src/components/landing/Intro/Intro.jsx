@@ -38,13 +38,12 @@ export const Intro = () => {
           <animated.h1 style={props}>
             Hello! I'm <div>Andrés.</div>
           </animated.h1>
-          {/* I'm a passionate developer based in the tropical land of Costa Rica. I enjoy architecturing and building sofware that impacts our modern world and that is delivered to end users in the form of beatufil and performant user interfaces. */}
-          <animated.h4 style={headingProps}>
+          <animated.p style={headingProps}>
             I'm a passionate developer from <strong>Costa Rica.</strong> I enjoy{' '}
             <strong>designing and building</strong> software that impacts our
             modern world and that is delivered to end users in the form of{' '}
             <strong>beautiful and performant user interfaces.</strong>
-          </animated.h4>
+          </animated.p>
           <div>
             <AnimatedButton style={buttonProps} as={AnchorLink} href="#about">
               Learn More

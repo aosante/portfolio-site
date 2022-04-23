@@ -358,8 +358,37 @@ export const Global = createGlobalStyle`
       padding-left: 0;
       padding-right: 0;
       padding-top: 0;
-      margin-bottom: 1.45rem;
+      margin-bottom: 2.5rem;
+      font-size: 1.125rem;
+      line-height: 1.5;
+      font-weight: normal;
+      color: var(--text-white-secondary);
+      letter-spacing: 1px;
+
+    @media (max-width: 680px) {
+      font-size: 1rem;
+      span.hide {
+        display: none;
+      }
+  }
+
     }
+
+    p {
+    margin-bottom: 2.5rem;
+    font-size: 1.125rem;
+    line-height: 1.5;
+    font-weight: normal;
+    color: var(--text-white-secondary);
+    letter-spacing: 1px;
+
+    @media (max-width: 680px) {
+      font-size: 1rem;
+      span.hide {
+        display: none;
+      }
+    }
+  }
     figure {
       margin-left: 0;
       margin-right: 0;

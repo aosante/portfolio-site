@@ -35,9 +35,6 @@ export const Details = styled.div`
   }
 
   p {
-    margin-bottom: 1.5rem;
-    font-size: 14.3pt;
-    font-weight: normal;
     line-height: 1.3;
     text-align: left;
     &:last-of-type {
