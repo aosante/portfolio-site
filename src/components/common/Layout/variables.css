@@ -1,7 +1,8 @@
 :root {
   /* colors */
   --purple-color: #7026b9;
+  --dark-purple-color: rgb(17, 8, 31);
   /* --purple-background-color: #fff; */
   --text-white: #ffffff;
-  /* --text-gray: #fff; */
+  --text-white-secondary: rgba(255, 255, 255, 0.8);
 }

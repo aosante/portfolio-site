@@ -50,7 +50,7 @@ export const Details = styled.div`
     margin-bottom: 2rem;
     font-size: 3.625rem;
     letter-spacing: 1.75px;
-    font-weight: 400;
+    font-weight: 700;
     color: var(--text-white);
 
     div {
@@ -75,7 +75,7 @@ export const Details = styled.div`
     margin-bottom: 2.5rem;
     font-size: 30pt;
     font-weight: normal;
-    color: #8892b0;
+    color: var(--text-white-secondary);
     letter-spacing: 1.5px;
 
     @media (max-width: 680px) {
