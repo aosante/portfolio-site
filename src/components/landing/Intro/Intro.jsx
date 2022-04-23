@@ -35,9 +35,8 @@ export const Intro = () => {
       <Header />
       <IntroWrapper as={Container}>
         <Details>
-          <p>Hi there! I'm</p>
           <animated.h1 style={props}>
-            Andrés<span>.</span>
+            Hi! I'm <div>Andrés.</div>
           </animated.h1>
           <animated.h4 style={headingProps}>
             A developer from{' '}

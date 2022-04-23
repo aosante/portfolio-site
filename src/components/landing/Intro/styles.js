@@ -45,16 +45,18 @@ export const Details = styled.div`
     width: 100%;
     margin-bottom: 4rem;
   }
-  p {
-    color: var(--purple-color);
-    padding-left: 5px;
-    letter-spacing: 1.75px;
-  }
 
   h1 {
     margin-bottom: 2rem;
-    font-size: 55pt;
+    font-size: 3.625rem;
     letter-spacing: 1.75px;
+    font-weight: 400;
+    color: var(--text-white);
+
+    div {
+      color: var(--purple-color);
+      display: inline-block;
+    }
     @media (max-width: 680px) {
       span {
         display: none;
@@ -74,7 +76,7 @@ export const Details = styled.div`
     font-size: 30pt;
     font-weight: normal;
     color: #8892b0;
-    letter-spacing: 1.75px;
+    letter-spacing: 1.5px;
 
     @media (max-width: 680px) {
       font-size: 28pt;
@@ -85,7 +87,7 @@ export const Details = styled.div`
   }
 
   span {
-    color: #ccd6f6;
+    color: var(--text-white);
 
     @media (max-width: 960px) {
       text-shadow: -0.1px -0.1px 0 #0a1928, 0.1px -0.1px 0 #0a1928,
