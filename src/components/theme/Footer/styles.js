@@ -11,7 +11,7 @@ export const Wrapper = styled.footer`
   position: relative;
   bottom: 0px;
   .fill {
-    background-color: #f7b5d7;
+    background-color: #221439;
     position: absolute;
     width: 100%;
     padding: 2em 0;
@@ -29,7 +29,7 @@ export const Wrapper = styled.footer`
   .wave {
     animation: ${wave} 3s linear;
     animation-iteration-count: infinite;
-    fill: #f7b5d7;
+    fill: #221439;
   }
   #wave2 {
     animation-duration: 5s;

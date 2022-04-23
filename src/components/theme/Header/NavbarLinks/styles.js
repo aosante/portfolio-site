@@ -30,9 +30,9 @@ export const Wrapper = styled.div`
     }
   }
   a {
-    color: #8892b0;
+    color: var(--text-white);
     text-decoration: none;
-    font-size: 17pt;
+    font-size: 1rem;
     transition: all 0.05s ease-in;
     padding: 3px 0px;
     border-radius: 10px;
@@ -40,7 +40,7 @@ export const Wrapper = styled.div`
       ${({ sidebar }) =>
         !sidebar &&
         `
-		color: #0a1928;
+		color: var(--text-white-secondary);
    `}
       transform: scale(1.015);
     }
@@ -53,9 +53,9 @@ export const Wrapper = styled.div`
       width: 0%;
       height: 3px;
       transform: translateX(-50%);
-      -webkit-transition: all 0.3s cubic-bezier(0.38, -0.25, 0.13, 0.75);
-      -o-transition: all 0.3s cubic-bezier(0.38, -0.25, 0.13, 0.75);
-      transition: all 0.3s cubic-bezier(0.38, -0.25, 0.13, 0.75);
+      -webkit-transition: all 0.5s cubic-bezier(0.38, -0.25, 0.13, 0.75);
+      -o-transition: all 0.5s cubic-bezier(0.38, -0.25, 0.13, 0.75);
+      transition: all 0.5s cubic-bezier(0.38, -0.25, 0.13, 0.75);
     }
     &:after {
       bottom: -10%;
@@ -70,6 +70,7 @@ export const Wrapper = styled.div`
       width: 100%;
     }
     @media (max-width: 960px) {
+      color: var(--purple-color);
       display: none;
       /* transition: all 5s ease-in-out; */
       ${({ sidebar }) =>

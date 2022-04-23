@@ -111,7 +111,7 @@ export const Stack = styled.ul`
   list-style-type: none;
   margin: 0;
   li {
-    color: #8892b0;
+    color: #2ca72c;
     font-size: 10pt;
   }
 `

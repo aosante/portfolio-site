@@ -48,7 +48,7 @@ export const Details = styled.div`
 
   h1 {
     margin-bottom: 2rem;
-    font-size: 3.625rem;
+    font-size: 2.625rem;
     letter-spacing: 1.75px;
     font-weight: 700;
     color: var(--text-white);
@@ -64,7 +64,7 @@ export const Details = styled.div`
     }
 
     @media (max-width: 960px) {
-      font-size: 50pt;
+      font-size: 2rem;
       margin-top: 2rem;
       text-shadow: -0.5px -0.5px 0 #0a1928, 0.5px -0.5px 0 #0a1928,
         -0.5px 0.5px 0 #0a1928, 0.5px 0.5px 0 #0a1928;
@@ -73,13 +73,14 @@ export const Details = styled.div`
 
   h4 {
     margin-bottom: 2.5rem;
-    font-size: 30pt;
+    font-size: 1.125rem;
+    line-height: 1.5;
     font-weight: normal;
     color: var(--text-white-secondary);
-    letter-spacing: 1.5px;
+    letter-spacing: 1px;
 
     @media (max-width: 680px) {
-      font-size: 28pt;
+      font-size: 1rem;
       span.hide {
         display: none;
       }
