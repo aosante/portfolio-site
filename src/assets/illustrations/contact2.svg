@@ -4,7 +4,7 @@
     <circle cx="568.0001" cy="373.0001" r="373.0001" fill="#f7b5d7" />
     <path
         d="M1041.4999,792.00017c0,15.464-204.15815,48-456,48s-456-32.536-456-48,204.15815-8,456-8S1041.4999,776.5362,1041.4999,792.00017Z"
-        transform="translate(-129.4999 -59.99983)" fill="#ff0a78" />
+        transform="translate(-129.4999 -59.99983)" fill="#7026b9" />
     <path
         d="M1041.4999,792.00017c0,15.464-204.15815,48-456,48s-456-32.536-456-48,204.15815-8,456-8S1041.4999,776.5362,1041.4999,792.00017Z"
         transform="translate(-129.4999 -59.99983)" opacity="0.1" />
@@ -12,9 +12,9 @@
     <path d="M851.68853,659.41265c0,63.20412,39.65095,114.3481,88.6519,114.3481"
         transform="translate(-129.4999 -59.99983)" fill="#3f3d56" />
     <path d="M940.34043,773.76075c0-63.91429,44.24816-115.63291,98.93038-115.63291"
-        transform="translate(-129.4999 -59.99983)" fill="#ff0a78" />
+        transform="translate(-129.4999 -59.99983)" fill="#7026b9" />
     <path d="M883.80878,665.1422c0,60.03721,25.28466,108.61855,56.53165,108.61855"
-        transform="translate(-129.4999 -59.99983)" fill="#ff0a78" />
+        transform="translate(-129.4999 -59.99983)" fill="#7026b9" />
     <path d="M940.34043,773.76075c0-81.66826,51.144-147.75317,114.3481-147.75317"
         transform="translate(-129.4999 -59.99983)" fill="#3f3d56" />
     <path
@@ -61,13 +61,13 @@
     <polygon points="466 162 70 162 70 292 85 292 85 326 119 292 466 292 466 162" fill="#3f3d56" />
     <polygon points="466 512 70 512 70 642 85 642 85 676 119 642 466 642 466 512" fill="#3f3d56" />
     <polygon points="140 338 536 338 536 468 521 468 521 502 487 468 140 468 140 338" fill="#3f3d56" />
-    <rect x="116" y="183.50034" width="304" height="12" fill="#ff0a78" opacity="0.3" />
-    <rect x="116" y="206.50034" width="152" height="12" fill="#ff0a78" opacity="0.3" />
-    <circle cx="133" cy="253.50034" r="17" fill="#ff0a78" opacity="0.3" />
-    <rect x="176" y="357.50034" width="304" height="12" fill="#ff0a78" />
-    <rect x="176" y="380.50034" width="152" height="12" fill="#ff0a78" />
-    <circle cx="193" cy="427.50034" r="17" fill="#ff0a78" />
-    <rect x="116" y="533.50034" width="304" height="12" fill="#ff0a78" opacity="0.3" />
-    <rect x="116" y="556.50034" width="152" height="12" fill="#ff0a78" opacity="0.3" />
-    <circle cx="133" cy="603.50034" r="17" fill="#ff0a78" opacity="0.3" />
+    <rect x="116" y="183.50034" width="304" height="12" fill="#7026b9" opacity="0.3" />
+    <rect x="116" y="206.50034" width="152" height="12" fill="#7026b9" opacity="0.3" />
+    <circle cx="133" cy="253.50034" r="17" fill="#7026b9" opacity="0.3" />
+    <rect x="176" y="357.50034" width="304" height="12" fill="#7026b9" />
+    <rect x="176" y="380.50034" width="152" height="12" fill="#7026b9" />
+    <circle cx="193" cy="427.50034" r="17" fill="#7026b9" />
+    <rect x="116" y="533.50034" width="304" height="12" fill="#7026b9" opacity="0.3" />
+    <rect x="116" y="556.50034" width="152" height="12" fill="#7026b9" opacity="0.3" />
+    <circle cx="133" cy="603.50034" r="17" fill="#7026b9" opacity="0.3" />
 </svg>

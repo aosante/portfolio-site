@@ -47,7 +47,7 @@ export const Details = styled.div`
   }
 
   a {
-    color: #ff0a78;
+    color: var(--purple-color);
   }
 `
 

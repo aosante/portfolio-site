@@ -46,9 +46,7 @@ export const Details = styled.div`
     margin-bottom: 4rem;
   }
   p {
-    font-family: 'SF Mono', Cambria, Cochin, Georgia, Times, 'Times New Roman',
-      serif;
-    color: #ff0a78;
+    color: var(--purple-color);
     padding-left: 5px;
     letter-spacing: 1.75px;
   }
@@ -57,9 +55,6 @@ export const Details = styled.div`
     margin-bottom: 2rem;
     font-size: 55pt;
     letter-spacing: 1.75px;
-    font-family: 'SF Mono', Cambria, Cochin, Georgia, Times, 'Times New Roman',
-      serif;
-
     @media (max-width: 680px) {
       span {
         display: none;

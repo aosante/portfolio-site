@@ -112,8 +112,6 @@ export const Stack = styled.ul`
   margin: 0;
   li {
     color: #8892b0;
-    font-family: 'SF Mono', Cambria, Cochin, Georgia, Times, 'Times New Roman',
-      serif;
     font-size: 10pt;
   }
 `

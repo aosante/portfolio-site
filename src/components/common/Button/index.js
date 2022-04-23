@@ -1,10 +1,10 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export const Button = styled.button`
   cursor: pointer;
   border-radius: 3px;
   padding: 1rem 2.5rem;
-  border: 1.2px solid #ff0a78;
+  border: 1.2px solid var(--purple-color);
   -webkit-appearance: none;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -12,8 +12,7 @@ export const Button = styled.button`
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  color: #ff0a78;
-  font-family: 'SF Mono', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: var(--purple-color);
   transition: background-color 400ms ease-in-out;
   &:focus {
     outline: none;
@@ -27,4 +26,4 @@ export const Button = styled.button`
     `
 		background: none;
 	`}
-`;
+`

@@ -12,8 +12,8 @@ module.exports = {
     instagram: 'https://www.instagram.com/aosanaa/',
   },
   googleAnalyticsID: '',
-  themeColor: '#ff0a78',
-  backgroundColor: '#ff0a78',
+  themeColor: '#7026b9',
+  backgroundColor: '#7026b9',
   social: {
     facebook: 'appId',
   },

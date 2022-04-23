@@ -1,15 +1,12 @@
 @font-face {
-  font-family: 'SF Mono';
-  font-style: normal;
-  font-display: fallback;
-  font-weight: 400;
-  src: url('./fonts/Inter-Bold.woff2');
-}
-
-@font-face {
-  font-family: 'Roboto';
+  font-family: 'Inter Bold';
   font-style: normal;
   font-display: fallback;
   font-weight: 700;
   src: url('./fonts/Inter-Bold.woff2');
+}
+
+* {
+  font-family: 'Inter Bold', Cambria, Cochin, Georgia, Times, 'Times New Roman',
+    serif;
 }

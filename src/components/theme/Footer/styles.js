@@ -1,4 +1,4 @@
-import styled, {keyframes} from 'styled-components';
+import styled, { keyframes } from 'styled-components'
 
 const wave = keyframes`
   to {
@@ -19,7 +19,7 @@ export const Wrapper = styled.footer`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    @media(max-width: 680px) {
+    @media (max-width: 680px) {
       flex-direction: column;
     }
   }
@@ -40,7 +40,7 @@ export const Wrapper = styled.footer`
     animation-duration: 7s;
     opacity: 0.3;
   }
-`;
+`
 
 export const Links = styled.div`
   width: 8%;
@@ -73,14 +73,14 @@ export const Info = styled.div`
     color: #0a1928;
     font-weight: 900;
     margin-bottom: 0;
-    font-family: 'SF Mono', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      serif;
     font-size: 16pt;
     img {
       width: 40px;
       margin-left: 5px;
     }
     span {
-      color: #ff0a78;
+      color: var(--purple-color);
     }
   }
   p.phone {
@@ -88,16 +88,15 @@ export const Info = styled.div`
     padding-left: 2rem;
     align-items: center;
   }
-  @media(max-width: 680px) {
+  @media (max-width: 680px) {
     flex-direction: column;
     margin: 0;
-    p, p.phone {
-      padding: .7rem;
+    p,
+    p.phone {
+      padding: 0.7rem;
       text-align: center;
       width: 100%;
       font-size: 13pt;
     }
   }
 `
-
-
