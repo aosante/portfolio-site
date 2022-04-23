@@ -39,7 +39,6 @@ export const Details = styled.div`
     font-size: 14.3pt;
     font-weight: normal;
     line-height: 1.3;
-    color: var(--caca);
     text-align: left;
     &:last-of-type {
       margin-bottom: 2.5rem;
@@ -47,7 +46,7 @@ export const Details = styled.div`
   }
 
   a {
-    color: var(--purple-color);
+    color: var(--text-white);
   }
 `
 

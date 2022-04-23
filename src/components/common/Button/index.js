@@ -2,9 +2,10 @@ import styled from 'styled-components'
 
 export const Button = styled.button`
   cursor: pointer;
-  border-radius: 3px;
-  padding: 1rem 2.5rem;
-  border: 1.2px solid var(--purple-color);
+  border-radius: 8px;
+  padding: 0.8rem 2rem;
+  background-color: var(--purple-color);
+  border: 1px solid var(--purple-color);
   -webkit-appearance: none;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -12,18 +13,13 @@ export const Button = styled.button`
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  color: var(--purple-color);
-  transition: background-color 400ms ease-in-out;
+  color: var(--text-white);
+  transition: background-color 200ms ease-out;
   &:focus {
     outline: none;
   }
   &:hover {
-    background-color: rgba(255, 10, 120, 0.15);
+    background-color: #3b0571;
+    border-color: #3b0571;
   }
-
-  ${({ secondary }) =>
-    secondary &&
-    `
-		background: none;
-	`}
 `
