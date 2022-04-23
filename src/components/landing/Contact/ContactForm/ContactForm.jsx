@@ -22,7 +22,6 @@ const ContactForm = () => {
       formData.append(`${field}`, data[field])
     )
 
-    // @todo: place endpoint in env variable
     fetch(`https://getform.io/f/${process.env.GATSBY_GETFORM_KEY}`, {
       method: 'POST',
       body: formData,
@@ -49,6 +48,7 @@ const ContactForm = () => {
         <Error>{errors.name && 'Your name is required'}</Error>
       </InputField>
       <InputField>
+        {/* @todo disable white style when using autocomplete from browser */}
         <Input
           id="email"
           aria-label="email"
@@ -75,7 +75,7 @@ const ContactForm = () => {
         />
         <Error>{errors.message && 'This field is required'}</Error>
       </InputField>
-      {/* TODO: Add recaptcha here */}
+      {/* @todo: Disable button when form is invalid */}
       <Center>
         <Button secondary type="submit">
           Submit
