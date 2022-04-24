@@ -24,14 +24,9 @@ export const Content = styled.div`
   padding: 2rem 3rem;
 
   p {
-    margin-bottom: 1.5rem;
-    font-size: 14.3pt;
-    font-weight: normal;
-    line-height: 1.3;
-    color: #8892b0;
     text-align: left;
     &:last-of-type {
-      margin-bottom: 2.5rem;
+      margin-bottom: 1.5rem;
     }
   }
 `

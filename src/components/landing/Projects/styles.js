@@ -40,14 +40,6 @@ export const Item = styled.div`
   width: 100%;
   height: 300px;
   box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.11);
-
-  h4 {
-    color: #212121;
-  }
-
-  p {
-    color: #707070;
-  }
 `
 
 export const Header = styled.div`
@@ -95,13 +87,8 @@ export const Links = styled.div`
 export const Content = styled.div`
   padding: 1rem 0;
   h4 {
-    color: #ccd6f6;
-    font-size: 18pt;
-  }
-  p {
-    color: #8892b0;
-    font-size: 13.5pt;
-    line-height: 1.3;
+    color: var(--text-white);
+    font-size: 1.5rem;
   }
 `
 

@@ -116,19 +116,22 @@ export const Skills = () => {
           <animated.div style={textProps}>
             <p>
               I'm a software developer, focusing on web applications, using
-              JavaScript as my main language.
+              <strong> JavaScript</strong> as my main language.
             </p>
             <p>
               On the front end side of things, I have experience utilizing
-              modern frameworks such as Vue and React, with a variety of
-              architectures, styling and state management tools, and data
-              fetching techniques.
+              modern frameworks such as <strong>Vue and React</strong>, with a
+              variety of architectural approaches, styling and state management
+              tools, and data fetching techniques.
             </p>
             <p>
-              As to server side code, my main experience lies in writing Node JS
-              (in both JavaScript and TypeScript). I also have hands-on
-              experience with testing (Jest, Enzyme, Mocha), and database
-              querying and design (SQL and Mongo).
+              As to server side code, my main experience lies in writing{' '}
+              <strong>Node JS </strong>
+              (in both JavaScript and TypeScript), and I've also had some
+              exposure to <strong>Golang</strong>. I also have hands-on
+              experience with testing{' '}
+              <strong>(Jest, Enzyme, Mocha, React Testing Library)</strong>, and
+              database querying and design <strong>(SQL and Mongo)</strong>.
             </p>
           </animated.div>
         </InView>
