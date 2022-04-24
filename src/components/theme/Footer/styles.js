@@ -50,7 +50,6 @@ export const Links = styled.div`
   img {
     margin: 0;
     width: 40px;
-    color: red;
     transition: 0.4s;
     &:hover {
       transform: scale(1.1);
@@ -70,11 +69,10 @@ export const Info = styled.div`
   display: flex;
   align-items: center;
   p {
-    color: #0a1928;
-    font-weight: 900;
+    color: var(--text-gray);
+    /* font-weight: 900; */
     margin-bottom: 0;
-      serif;
-    font-size: 16pt;
+    font-size: 1rem;
     img {
       width: 40px;
       margin-left: 5px;
@@ -87,6 +85,9 @@ export const Info = styled.div`
     display: flex;
     padding-left: 2rem;
     align-items: center;
+    img {
+      width: 25px;
+    }
   }
   @media (max-width: 680px) {
     flex-direction: column;
