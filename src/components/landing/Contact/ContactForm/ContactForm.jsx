@@ -8,7 +8,7 @@ import { Error, Center, InputField } from './styles'
 const ContactForm = () => {
   const {
     handleSubmit,
-    formState: { errors },
+    formState: { errors, isDirty, isValid },
     register,
     reset,
   } = useForm({
@@ -27,7 +27,7 @@ const ContactForm = () => {
       body: formData,
     })
       .then(() => {
-        Swal.fire('Message sent!', "I'll get back to you ASAP", 'success')
+        Swal.fire('Message sent!', `I'll get back to you ASAP`, 'success')
         reset()
       })
       .catch((error) => alert(error))
@@ -48,7 +48,6 @@ const ContactForm = () => {
         <Error>{errors.name && 'Your name is required'}</Error>
       </InputField>
       <InputField>
-        {/* @todo disable white style when using autocomplete from browser */}
         <Input
           id="email"
           aria-label="email"
@@ -75,9 +74,8 @@ const ContactForm = () => {
         />
         <Error>{errors.message && 'This field is required'}</Error>
       </InputField>
-      {/* @todo: Disable button when form is invalid */}
       <Center>
-        <Button secondary type="submit">
+        <Button disabled={isDirty && !isValid} secondary type="submit">
           Submit
         </Button>
       </Center>

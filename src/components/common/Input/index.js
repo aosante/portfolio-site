@@ -3,12 +3,12 @@ import styled from 'styled-components'
 export const Input = styled.input`
   width: 100%;
   box-sizing: border-box;
-  border: 0.4px solid rgba(255, 255, 255, 0.1);
+  border: 0.4px solid var(--faded-color);
   padding: 0.8rem 1rem;
   border-radius: 3px;
   margin-bottom: 0.5rem;
   transition: 0.3s;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: var(--faded-color);
   color: #ccd6f6;
 
   ${({ error }) =>
@@ -25,12 +25,12 @@ export const Input = styled.input`
 export const TextArea = styled.textarea`
   width: 100%;
   box-sizing: border-box;
-  border: 0.4px solid rgba(255, 255, 255, 0.1);
+  border: 0.4px solid var(--faded-color);
   padding: 0.8rem 1rem;
   border-radius: 3px;
   margin-bottom: 0.5rem;
   transition: 0.3s;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: var(--faded-color);
   color: #ccd6f6;
 
   ${({ error }) =>

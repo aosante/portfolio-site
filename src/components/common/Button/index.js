@@ -23,4 +23,9 @@ export const Button = styled.button`
     background-color: #3b0571;
     border-color: #3b0571;
   }
+  &:disabled {
+    background-color: var(--faded-color);
+    color: var(--faded-color);
+    border-color: var(--faded-color);
+  }
 `

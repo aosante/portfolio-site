@@ -2,7 +2,7 @@
   /* colors */
   --purple-color: #7026b9;
   --dark-purple-color: rgb(17, 8, 31);
-  /* --purple-background-color: #fff; */
   --text-white: #ffffff;
   --text-white-secondary: rgba(255, 255, 255, 0.8);
+  --faded-color: rgba(255, 255, 255, 0.1);
 }
