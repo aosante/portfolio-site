@@ -1,27 +1,27 @@
-import htmlIcon from './html.svg';
-import cssIcon from './css.svg';
-import jsIcon from './js.svg';
-import graphqlIcon from './graphql.svg';
-import reactIcon from './react.svg';
-import sassIcon from './sass.svg';
-import sqlserverIcon from './sql-server.svg';
-import mongodbIcon from './mongodb.svg';
-import nodeIcon from './node.svg';
-import vueIcon from './vue.svg';
+import cssIcon from './css.svg'
+import graphqlIcon from './graphql.svg'
+import htmlIcon from './html.svg'
+import jsIcon from './js.svg'
 import materialuiIcon from './materialui.svg'
+import mongodbIcon from './mongodb.svg'
+import nodeIcon from './node.svg'
+import postgresqlIcon from './postgresql.svg'
+import reactIcon from './react.svg'
 import reduxIcon from './redux.svg'
+import sassIcon from './sass.svg'
+import vueIcon from './vue.svg'
 
 export default {
-    htmlIcon,
-    cssIcon,
-    jsIcon,
-    graphqlIcon,
-    reactIcon,
-    sassIcon,
-    sqlserverIcon,
-    mongodbIcon,
-    nodeIcon,
-    vueIcon,
-    materialuiIcon,
-    reduxIcon,
+  cssIcon,
+  graphqlIcon,
+  htmlIcon,
+  jsIcon,
+  materialuiIcon,
+  mongodbIcon,
+  nodeIcon,
+  postgresqlIcon,
+  reactIcon,
+  reduxIcon,
+  sassIcon,
+  vueIcon,
 }

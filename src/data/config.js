@@ -63,8 +63,8 @@ module.exports = {
     {
       css: 'linear-gradient(135deg, #e3c3fc 0%, #8ec5fc 100%)',
       height: 250,
-      name: 'sqlserverIcon',
-      isDark: true,
+      name: 'postgresqlIcon',
+      // isDark: true,
     },
     {
       css: 'linear-gradient(135deg, #f091fb 0%, #f5576c 100%)',
