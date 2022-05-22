@@ -33,12 +33,12 @@ module.exports = {
     {
       css: 'linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)',
       height: 250,
-      name: 'htmlIcon',
+      name: 'typescriptIcon',
     },
     {
       css: 'linear-gradient(135deg, #c3cfe2 0%, #c3cfe2 100%)',
       height: 250,
-      name: 'cssIcon',
+      name: 'tailwindIcon',
     },
     {
       css: 'linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%)',
@@ -64,7 +64,6 @@ module.exports = {
       css: 'linear-gradient(135deg, #e3c3fc 0%, #8ec5fc 100%)',
       height: 250,
       name: 'postgresqlIcon',
-      // isDark: true,
     },
     {
       css: 'linear-gradient(135deg, #f091fb 0%, #f5576c 100%)',

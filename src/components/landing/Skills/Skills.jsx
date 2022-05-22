@@ -67,7 +67,7 @@ export const Skills = () => {
   // Form a grid of stacked items using width & columns we got from hooks 1 & 2
   const [gridHeights, gridItems] = useMemo(() => {
     let heights = new Array(columns).fill(0) // Each column gets a height starting with zero
-    let gridItems = items.map((child, i) => {
+    let gridItems = items.map((child) => {
       const column = heights.indexOf(Math.min(...heights)) // Basic masonry-grid placing, puts tile into the smallest column using Math.min
       const x = (width / columns) * column // x = container width / number of columns * column index,
       const y = (heights[column] += child.height / 2) - child.height / 2 // y = it's just the height of the current column
