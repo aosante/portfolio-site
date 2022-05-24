@@ -1,11 +1,8 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
+import { StaticImage } from 'gatsby-plugin-image'
 
 import { Container, Card, Title } from 'components/common'
-import folderIcon from 'assets/icons/folder.svg'
-import githubIcon from 'assets/icons/github.svg'
-import crossedeyeIcon from 'assets/icons/crossedeye.svg'
-import eyeIcon from 'assets/icons/eye.svg'
 import {
   Wrapper,
   OuterContainer,
@@ -16,6 +13,11 @@ import {
   Stack,
   Links,
 } from './styles'
+
+const folderIconPath = '../../../assets/icons/folder.svg'
+const githubIconPath = '../../../assets/icons/github.svg'
+const crossedeyeIconPath = '../../../assets/icons/crossedeye.svg'
+const eyeIconPath = '../../../assets/icons/eye.svg'
 
 export const Projects = () => {
   const {
@@ -52,11 +54,11 @@ export const Projects = () => {
               <Card>
                 <Header>
                   <div className="icon">
-                    <img src={folderIcon} alt="Folder Icon" />
+                    <StaticImage src={folderIconPath} alt="Folder Icon" />
                   </div>
                   <Links>
                     <a href={frontmatter.sourcelink} target="_blank">
-                      <img src={githubIcon} alt="Github Icon" />
+                      <StaticImage src={githubIconPath} alt="Github Icon" />
                     </a>
                     {frontmatter.shouldDisable ? (
                       <div
@@ -64,7 +66,7 @@ export const Projects = () => {
                         className="disabled"
                         target="_blank"
                       >
-                        <img src={crossedeyeIcon} alt="Eye Icon" />
+                        <StaticImage src={crossedeyeIconPath} alt="Eye Icon" />
                       </div>
                     ) : (
                       <a
@@ -72,7 +74,7 @@ export const Projects = () => {
                         disabled={true}
                         target="_blank"
                       >
-                        <img src={eyeIcon} alt="Eye Icon" />
+                        <StaticImage src={eyeIconPath} alt="Eye Icon" />
                       </a>
                     )}
                   </Links>

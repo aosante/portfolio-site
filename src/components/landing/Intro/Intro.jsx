@@ -1,10 +1,10 @@
 import React from 'react'
+import { StaticImage } from 'gatsby-plugin-image'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import { useSpring, animated } from 'react-spring'
 
 import { Header } from 'components/theme'
 import { Container, Button } from 'components/common'
-import dev from 'assets/illustrations/developer.svg'
 import { Wrapper, IntroWrapper, Details, Thumbnail } from './styles'
 
 const titleAnimation = (animationDuration, animationDelay) => {
@@ -51,7 +51,10 @@ export const Intro = () => {
           </div>
         </Details>
         <Thumbnail>
-          <img src={dev} alt="I’m John and I’m a Backend & Devops engineer!" />
+          <StaticImage
+            src="../../../assets/illustrations/developer.svg"
+            alt="I’m Andrés and I’m a Software engineer!"
+          />
         </Thumbnail>
       </IntroWrapper>
     </Wrapper>

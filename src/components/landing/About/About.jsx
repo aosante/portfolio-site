@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
+import { StaticImage } from 'gatsby-plugin-image'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import { InView } from 'react-intersection-observer'
 import { useSpring, animated } from 'react-spring'
 
 import { Container, Button, Title } from 'components/common'
-import surfer from 'assets/illustrations/surfer.svg'
 import { AboutWrapper, Details, Thumbnail } from './styles'
 
 export const About = () => {
@@ -26,7 +26,10 @@ export const About = () => {
     <div id="about">
       <AboutWrapper as={Container}>
         <Thumbnail>
-          <img src={surfer} alt="Surfer illustration" />
+          <StaticImage
+            src="../../../assets/illustrations/surfer.svg"
+            alt="Surfer illustration"
+          />
         </Thumbnail>
         <Details>
           <InView tag="div">

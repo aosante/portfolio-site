@@ -1,7 +1,7 @@
 import React from 'react'
+import { StaticImage } from 'gatsby-plugin-image'
 
 import { Container } from 'components/common'
-import contact from 'assets/illustrations/contact2.svg'
 import { Wrapper, Details, Thumbnail } from './styles'
 import ContactForm from './ContactForm/ContactForm'
 
@@ -11,7 +11,10 @@ export const Contact = () => (
       <ContactForm />
     </Details>
     <Thumbnail>
-      <img src={contact} alt="I’m John and I’m a Backend & Devops engineer!" />
+      <StaticImage
+        src="../../../assets/illustrations/contact2.svg"
+        alt="Contact Form"
+      />
     </Thumbnail>
   </Wrapper>
 )
