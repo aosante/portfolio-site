@@ -75,7 +75,7 @@ const ContactForm = () => {
         <Error>{errors.message && 'This field is required'}</Error>
       </InputField>
       <Center>
-        <Button disabled={isDirty && !isValid} secondary type="submit">
+        <Button disabled={isDirty && !isValid} type="submit">
           Submit
         </Button>
       </Center>
