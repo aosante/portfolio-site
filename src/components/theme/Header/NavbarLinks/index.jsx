@@ -33,6 +33,13 @@ const NavbarLinks = ({ sidebar }) => {
         <AnchorLink onMouseEnter={() => playAudio()} href="#contact">
           Contact
         </AnchorLink>
+        <a
+          onMouseEnter={() => playAudio()}
+          href="andres-osante-resume.pdf"
+          download
+        >
+          Resume
+        </a>
       </div>
     </Wrapper>
   )
