@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Wrapper = styled.div`
-  min-width: 305px;
+  min-width: 400px;
   div {
     display: flex;
     justify-content: space-between;
