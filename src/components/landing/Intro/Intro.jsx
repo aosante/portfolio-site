@@ -41,8 +41,8 @@ export const Intro = () => {
           <animated.p style={headingProps}>
             I'm a passionate developer from <strong>Costa Rica.</strong> I enjoy{' '}
             <strong>designing and building</strong> software that impacts our
-            modern world and that is delivered to end users in the form of{' '}
-            <strong>beautiful and performant user interfaces.</strong>
+            modern world and that is delivered to end users in the form of user
+            friendly and performant UIs.
           </animated.p>
           <div>
             <AnimatedButton style={buttonProps} as={AnchorLink} href="#about">

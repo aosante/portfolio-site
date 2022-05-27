@@ -131,7 +131,7 @@ export const Skills = () => {
               exposure to <strong>Golang</strong>. I also have hands-on
               experience with testing{' '}
               <strong>(Jest, Enzyme, Mocha, React Testing Library)</strong>, and
-              database querying and design <strong>(SQL and Mongo)</strong>.
+              database querying and design <strong>(SQL and MongoDB)</strong>.
             </p>
           </animated.div>
         </InView>

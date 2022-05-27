@@ -53,13 +53,14 @@ export const About = () => {
                 .
               </p>
               <p>
-                I discovered software development 4 years ago, and I've been
+                I discovered software development 5 years ago, and I've been
                 building apps as a hobby and professionally ever since.
               </p>
               <p>
                 Surfing, guitar and programming are the three things I enjoy the
-                most, and one of my biggest goals is to excercise my passion for
-                the latter by being part of enriching and impactful projects.
+                most, and one of my biggest goals is to exercise my passion for
+                the latter by being part of enriching and impactful software
+                projects.
               </p>
             </animated.div>
           </InView>
