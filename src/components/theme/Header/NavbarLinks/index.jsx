@@ -5,8 +5,11 @@ import { Wrapper } from './styles'
 import tinkSound from 'assets/audio/tink.wav'
 import soundOn from 'assets/icons/sound-on.jpg'
 import soundOff from 'assets/icons/sound-off.jpg'
+import { useThemeToggle } from '../../ThemeToggleContext'
 
 const NavbarLinks = ({ sidebar }) => {
+  const [isDarkTheme, toggleTheme] = useThemeToggle()
+  // @todo: remove after implementing theme switching
   const [mute, setMute] = useState(false)
   const [audio] = useState(
     typeof window !== 'undefined' ? new Audio(tinkSound) : null
@@ -18,11 +21,13 @@ const NavbarLinks = ({ sidebar }) => {
 
   return (
     <Wrapper sidebar={sidebar}>
-      <img
-        onClick={() => setMute(!mute)}
-        src={mute ? soundOff : soundOn}
-        alt="Sound off or on icon"
-      />
+      <span
+        onClick={toggleTheme}
+        aria-label={`${isDarkTheme ? 'Dark' : 'Light'} mode`}
+        role="img"
+      >
+        {isDarkTheme ? '🌞' : '🌜'}
+      </span>
       <div>
         <AnchorLink onMouseEnter={() => playAudio()} href="#about">
           About

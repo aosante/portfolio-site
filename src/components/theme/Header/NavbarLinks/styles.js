@@ -14,14 +14,14 @@ export const Wrapper = styled.div`
 		transform: translateY(100px);
    `}
   }
-  img {
-    width: 30px;
+  span {
+    font-size: 1.7em;
     border-radius: 50%;
     top: 10px;
     right: 10px;
     position: absolute;
     cursor: pointer;
-    transition: all 0.05s ease-in;
+    transition: all 0.08s ease-in;
     &:hover {
       transform: scale(1.2);
     }

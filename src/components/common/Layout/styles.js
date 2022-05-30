@@ -643,7 +643,8 @@ export const Global = createGlobalStyle`
       -ms-font-feature-settings: 'kern', 'liga', 'clig', 'calt';
       -webkit-font-feature-settings: 'kern', 'liga', 'clig', 'calt';
       font-feature-settings: 'kern', 'liga', 'clig', 'calt';
-      background-color: var(--dark-purple-color);
+      /* background-color: var(--dark-purple-color); */
+      background-color: ${({ theme }) => theme.body}
     }
 
     a {
@@ -657,3 +658,12 @@ export const Global = createGlobalStyle`
     }
   }
 `
+
+export const lightTheme = {
+  body: '#f1f1f1',
+  text: '#121620',
+}
+export const darkTheme = {
+  body: 'var(--dark-purple-color)',
+  text: '#f1f1f1',
+}
