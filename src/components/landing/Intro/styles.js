@@ -51,7 +51,7 @@ export const Details = styled.div`
     font-size: 2.625rem;
     letter-spacing: 1.75px;
     font-weight: 700;
-    color: var(--text-white);
+    color: ${({ theme }) => theme.text};
 
     div {
       color: var(--purple-color);

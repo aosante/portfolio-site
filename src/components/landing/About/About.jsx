@@ -64,7 +64,7 @@ export const About = () => {
               </p>
             </animated.div>
           </InView>
-          <Button as={AnchorLink} href="#contact">
+          <Button className="button" as={AnchorLink} href="#contact">
             Let's Talk
           </Button>
         </Details>

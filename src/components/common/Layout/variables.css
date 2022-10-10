@@ -4,5 +4,7 @@
   --dark-purple-color: rgb(17, 8, 31);
   --text-white: #ffffff;
   --text-white-secondary: rgba(255, 255, 255, 0.8);
+  --text-dark: #232129;
+  --text-dark-secondary: #48434f;
   --faded-color: rgba(255, 255, 255, 0.1);
 }

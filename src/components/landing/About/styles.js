@@ -43,6 +43,10 @@ export const Details = styled.div`
   }
 
   a {
+    color: ${({ theme }) => theme.textSecondary};
+  }
+
+  a.button {
     color: var(--text-white);
   }
 `

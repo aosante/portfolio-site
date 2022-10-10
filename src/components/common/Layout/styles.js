@@ -369,7 +369,7 @@ export const Global = createGlobalStyle`
       font-size: 1.125rem;
       line-height: 1.5;
       font-weight: normal;
-      color: var(--text-white-secondary);
+      color: ${({ theme }) => theme.textSecondary};
       letter-spacing: 1px;
 
     @media (max-width: 680px) {
@@ -386,7 +386,7 @@ export const Global = createGlobalStyle`
     font-size: 1.125rem;
     line-height: 1.5;
     font-weight: normal;
-    color: var(--text-white-secondary);
+    color: ${({ theme }) => theme.textSecondary};
     letter-spacing: 1px;
 
     @media (max-width: 680px) {
@@ -643,7 +643,6 @@ export const Global = createGlobalStyle`
       -ms-font-feature-settings: 'kern', 'liga', 'clig', 'calt';
       -webkit-font-feature-settings: 'kern', 'liga', 'clig', 'calt';
       font-feature-settings: 'kern', 'liga', 'clig', 'calt';
-      /* background-color: var(--dark-purple-color); */
       background-color: ${({ theme }) => theme.body}
     }
 
@@ -660,10 +659,12 @@ export const Global = createGlobalStyle`
 `
 
 export const lightTheme = {
-  body: '#f1f1f1',
-  text: '#121620',
+  body: '#ffffff',
+  text: 'var(--text-dark)',
+  textSecondary: 'var(--text-dark-secondary)',
 }
 export const darkTheme = {
   body: 'var(--dark-purple-color)',
-  text: '#f1f1f1',
+  text: 'var(--text-white)',
+  textSecondary: 'var(--text-white-secondary)',
 }
