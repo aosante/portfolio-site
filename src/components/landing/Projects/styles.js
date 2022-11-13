@@ -21,8 +21,7 @@ export const Grid = styled.div`
   align-items: center;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 8fr;
-  grid-row-gap: 1.5rem;
-  grid-column-gap: 3rem;
+  grid-gap: 1.5rem 3rem;
 
   @media (max-width: 960px) {
     grid-template-columns: repeat(2, 1fr);
