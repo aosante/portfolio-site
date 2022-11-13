@@ -50,7 +50,6 @@ export const Projects = () => {
         <Title>Projects</Title>
         <Grid>
           {edges.map(({ node: { frontmatter, id } }) => (
-            // <Item >
             <Card key={id}>
               <Header>
                 <div className="icon">
@@ -89,7 +88,6 @@ export const Projects = () => {
                 ))}
               </Stack>
             </Card>
-            // </Item>
           ))}
         </Grid>
       </Wrapper>
