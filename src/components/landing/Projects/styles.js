@@ -33,20 +33,21 @@ export const Grid = styled.div`
 `
 
 export const Card = styled.div`
-  background: var(--faded-color);
+  background: ${({ theme }) => theme.fadedCardBg};
   border-radius: 8px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   padding: 1rem;
-  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.11);
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
   height: 300px;
   width: 100%;
+  transition: all 0.4s ease-in-out;
   &:hover {
-    background-color: #221439;
+    opacity: 0.8;
     box-shadow: 0 0 4px #2ca72c;
     top: -6px;
-    transition: all 0.2s ease-out;
+    transform: scale(1.01);
   }
 `
 
@@ -95,7 +96,7 @@ export const Links = styled.div`
 export const Content = styled.div`
   padding: 1rem 0;
   h4 {
-    color: var(--text-white);
+    color: ${({ theme }) => theme.text};
     font-size: 1.5rem;
   }
 `
