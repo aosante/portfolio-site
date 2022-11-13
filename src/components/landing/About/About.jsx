@@ -58,8 +58,8 @@ export const About = () => {
               </p>
               <p>
                 Surfing, guitar and programming are the three things I enjoy the
-                most, and one of my biggest goals is to exercise my passion for
-                the latter by being part of enriching and impactful software
+                most, and one of my main goals is to exercise my passion for the
+                latter by being part of enriching and impactful software
                 projects.
               </p>
             </animated.div>
