@@ -21,7 +21,8 @@ export const Grid = styled.div`
   align-items: center;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 8fr;
-  gap: 1.2rem;
+  grid-row-gap: 1.5rem;
+  grid-column-gap: 3rem;
 
   @media (max-width: 960px) {
     grid-template-columns: repeat(2, 1fr);
@@ -30,16 +31,24 @@ export const Grid = styled.div`
   @media (max-width: 680px) {
     grid-template-columns: 1fr;
   }
-
-  .item {
-  }
 `
 
-export const Item = styled.div`
+export const Card = styled.div`
+  background: var(--faded-color);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 1rem;
   box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.11);
   height: 300px;
-  margin-bottom: 2rem;
   width: 100%;
+  &:hover {
+    background-color: #221439;
+    box-shadow: 0 0 4px #2ca72c;
+    top: -6px;
+    transition: all 0.2s ease-out;
+  }
 `
 
 export const Header = styled.div`
