@@ -32,14 +32,14 @@ export const Grid = styled.div`
   }
 
   .item {
-    margin-bottom: 2rem;
   }
 `
 
 export const Item = styled.div`
-  width: 100%;
-  height: 300px;
   box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.11);
+  height: 300px;
+  margin-bottom: 2rem;
+  width: 100%;
 `
 
 export const Header = styled.div`
