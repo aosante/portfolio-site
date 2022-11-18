@@ -7,8 +7,8 @@ import { darkTheme, lightTheme } from 'components/common/Layout/styles'
 import { ThemeToggleContext } from 'components/theme/ThemeToggleContext'
 
 const Index = () => {
-  const [theme, setTheme] = useState(
-    () => localStorage.getItem('theme') || 'dark'
+  const [theme, setTheme] = useState(() =>
+    typeof window !== 'undefined' ? localStorage?.getItem('theme') : 'dark'
   )
   const isDarkTheme = theme === 'dark'
 
