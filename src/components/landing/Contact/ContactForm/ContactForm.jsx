@@ -5,6 +5,8 @@ import Swal from 'sweetalert2'
 import { Button, Input, TextArea } from 'components/common'
 import { Error, Center, InputField } from './styles'
 
+const EMAIL_REGEX = /^\S+@\S+\.\S+$/
+
 const ContactForm = () => {
   const {
     handleSubmit,
@@ -54,7 +56,7 @@ const ContactForm = () => {
           type="email"
           name="email"
           placeholder="Email *"
-          {...register('email', { required: true, pattern: /^\S+@\S+\.\S+$/ })}
+          {...register('email', { required: true, pattern: EMAIL_REGEX })}
           error={Boolean(errors.email)}
         />
         <Error>
