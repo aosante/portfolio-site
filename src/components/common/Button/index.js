@@ -24,8 +24,8 @@ export const Button = styled.button`
     border-color: #3b0571;
   }
   &:disabled {
-    background-color: var(--faded-color);
-    color: var(--faded-color);
+    background-color: ${({theme}) => theme.fadedInputBg};
+    color: ${({theme}) => theme.text};
     border-color: var(--faded-color);
   }
 `
