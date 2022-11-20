@@ -8,8 +8,8 @@ export const Input = styled.input`
   border-radius: 3px;
   margin-bottom: 0.5rem;
   transition: 0.3s;
-  background-color: var(--faded-color);
-  color: #ccd6f6;
+  background-color: ${({theme}) => theme.fadedInputBg};
+  color: ${({theme}) => theme.text};
 
   ${({ error }) =>
     error &&
@@ -30,8 +30,8 @@ export const TextArea = styled.textarea`
   border-radius: 3px;
   margin-bottom: 0.5rem;
   transition: 0.3s;
-  background-color: var(--faded-color);
-  color: #ccd6f6;
+  background-color: ${({theme}) => theme.fadedInputBg};
+  color: ${({theme}) => theme.text};
 
   ${({ error }) =>
     error &&

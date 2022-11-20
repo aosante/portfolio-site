@@ -661,12 +661,14 @@ export const Global = createGlobalStyle`
 export const lightTheme = {
   body: '#ffffff',
   fadedCardBg: 'rgba(255, 255, 255, 1)',
+  fadedInputBg: 'var(--faded-purple-color)',
   text: 'var(--text-dark)',
   textSecondary: 'var(--text-dark-secondary)',
 }
 export const darkTheme = {
   body: 'var(--dark-purple-color)',
   fadedCardBg: 'rgba(255, 255, 255, 0.1)',
+  fadedInputBg: 'var(--faded-color)',
   text: 'var(--text-white)',
   textSecondary: 'var(--text-white-secondary)',
 }
