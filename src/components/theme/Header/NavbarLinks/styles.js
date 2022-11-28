@@ -14,17 +14,12 @@ export const Wrapper = styled.div`
 		transform: translateY(100px);
    `}
   }
-  span {
-    font-size: 1.7em;
-    border-radius: 50%;
+  svg {
     top: 10px;
     right: 10px;
     position: absolute;
     cursor: pointer;
     transition: all 0.08s ease-in;
-    &:hover {
-      transform: scale(1.2);
-    }
     @media (max-width: 960px) {
       display: none;
     }
