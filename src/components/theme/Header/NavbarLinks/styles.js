@@ -12,7 +12,7 @@ export const Wrapper = styled.div`
       `
 		flex-direction: column;
 		transform: translateY(100px);
-   `}
+    `}
   }
   svg {
     top: 10px;
@@ -28,52 +28,26 @@ export const Wrapper = styled.div`
     color: var(--text-white);
     text-decoration: none;
     font-size: 1rem;
-    transition: all 0.05s ease-in;
     padding: 3px 0px;
-    border-radius: 10px;
+    display: block;
+    border-bottom: 1px solid transparent;
+    transition: border 0.3s ease-in-out;
     &:hover {
       ${({ sidebar }) =>
-        !sidebar &&
-        `
-		color: var(--text-white-secondary);
-   `}
-      transform: scale(1.015);
+        !sidebar && `color: var(--text-white-secondary);`}
     }
-    &:before,
-    &:after {
-      content: '';
-      display: block;
-      position: absolute;
-      left: 50%;
-      width: 0%;
-      height: 3px;
-      transform: translateX(-50%);
-      -webkit-transition: all 0.5s cubic-bezier(0.38, -0.25, 0.13, 0.75);
-      -o-transition: all 0.5s cubic-bezier(0.38, -0.25, 0.13, 0.75);
-      transition: all 0.5s cubic-bezier(0.38, -0.25, 0.13, 0.75);
-    }
-    &:after {
-      bottom: -10%;
-      background-color: var(--purple-color);
-    }
-    &:before {
-      top: -10%;
-      background-color: var(--purple-color);
-    }
-    &:hover:after,
-    &:hover:before {
-      width: 100%;
+    &:hover {
+      border-bottom: 1px solid white;
     }
     @media (max-width: 960px) {
       color: var(--purple-color);
       display: none;
-      /* transition: all 5s ease-in-out; */
       ${({ sidebar }) =>
         sidebar &&
         `
-		display: block;
-		margin: 10px;
-   `}
+        display: block;
+        margin: 10px;
+      `}
     }
   }
 `
