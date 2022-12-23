@@ -25,19 +25,16 @@ export const Wrapper = styled.div`
     }
   }
   a {
-    color: var(--text-white);
+    color: #b68af5;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
     padding: 3px 0px;
     display: block;
     border-bottom: 1px solid transparent;
     transition: border 0.3s ease-in-out;
     &:hover {
-      ${({ sidebar }) =>
-        !sidebar && `color: var(--text-white-secondary);`}
-    }
-    &:hover {
-      border-bottom: 1px solid white;
+      border-bottom: 1px solid #b68af5;
     }
     @media (max-width: 960px) {
       color: var(--purple-color);
